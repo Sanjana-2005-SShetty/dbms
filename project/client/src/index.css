@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply font-sans text-gray-800 bg-gray-50;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+
+  h1 {
+    @apply text-3xl md:text-4xl;
+  }
+  
+  h2 {
+    @apply text-2xl md:text-3xl;
+  }
+  
+  h3 {
+    @apply text-xl md:text-2xl;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-all duration-200 inline-flex items-center justify-center gap-2;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-500 text-white hover:bg-primary-600 active:bg-primary-700;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-500 text-white hover:bg-secondary-600 active:bg-secondary-700;
+  }
+
+  .btn-accent {
+    @apply bg-accent-500 text-white hover:bg-accent-600 active:bg-accent-700;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-primary-500 text-primary-500 hover:bg-primary-50;
+  }
+
+  .input {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-300 focus:border-primary-500 outline-none transition-all duration-200;
+  }
+
+  .select {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-300 focus:border-primary-500 outline-none transition-all duration-200;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-card p-6 transition-all duration-200 hover:shadow-card-hover;
+  }
+
+  .skill-tag {
+    @apply px-3 py-1 rounded-full text-sm font-medium;
+  }
+
+  .skill-tag-development {
+    @apply bg-primary-100 text-primary-800;
+  }
+
+  .skill-tag-design {
+    @apply bg-secondary-100 text-secondary-800;
+  }
+
+  .skill-tag-marketing {
+    @apply bg-accent-100 text-accent-800;
+  }
+
+  .skill-tag-management {
+    @apply bg-yellow-100 text-yellow-800;
+  }
+
+  .skill-tag-other {
+    @apply bg-gray-100 text-gray-800;
+  }
+
+  .navbar {
+    @apply sticky top-0 bg-white shadow-sm z-10 px-4 py-3;
+  }
+
+  .sidebar {
+    @apply fixed left-0 top-16 h-screen w-64 bg-white shadow-sm overflow-y-auto transition-all duration-300 z-10 p-4;
+  }
+
+  .main-content {
+    @apply ml-0 md:ml-64 p-4 md:p-8 transition-all duration-300;
+  }
+}
